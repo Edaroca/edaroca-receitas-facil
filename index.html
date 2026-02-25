@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>É da Roça!</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+}
+
+header {
+    background-color: #8B4513;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.search-bar {
+    margin-top: 15px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 60%;
+    border-radius: 20px;
+    border: none;
+}
+
+nav {
+    background-color: #a0522d;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px 0;
+}
+
+.card-content button {
+    background-color: #8B4513;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌽 É da Roça!</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar receita...">
+    </div>
+</header>
+
+<nav>
+    <a href="#">Café da Manhã</a>
+    <a href="#">Almoço</a>
+    <a href="#">Sobremesas</a>
+    <a href="#">Receitas Caipiras</a>
+</nav>
+
+<section class="container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1604908176997-431ef17e8c75" alt="Bolo de milho">
+        <div class="card-content">
+            <h3>Bolo de Milho da Vovó</h3>
+            <button>Ver Receita</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Feijão tropeiro">
+        <div class="card-content">
+            <h3>Feijão Tropeiro Raiz</h3>
+            <button>Ver Receita</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1589308078056-f6c08c7e91e3" alt="Pamonha">
+        <div class="card-content">
+            <h3>Pamonha Caseira</h3>
+            <button>Ver Receita</button>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 É da Roça! - Todas as receitas com sabor do interior 🌻
+</footer>
+
+</body>
+</html>
